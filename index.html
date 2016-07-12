@@ -1,96 +1,103 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-
-    <link rel="stylesheet" href="newCss.css" />
-
-    <title>Portfolio Main Page</title>
+    <title>Wild World</title>
 	<meta charset="utf-8" />
+
+
+    <style type="text/css">
+
+        @import url(https://fonts.googleapis.com/css?family=Oswald:700);
+
+        .container {
+            height: 300%;
+            width: 100%;
+            position: absolute;
+            overflow-x: hidden;
+            margin: 0;
+            top: 0;
+            left: 0;
+            background-image:url(/Images/sketchyBGgrey_v2.png);
+            
+            background-repeat: repeat-y;
+        }
+
+        .content {
+            margin-top: 30px;
+            margin-left: 5%;
+            display: block;
+        }
+
+        nav {
+            background-color: black;
+            height: 50px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Oswald, sans-serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 1.0vw;
+            padding: 16px;
+            float: left;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #111111;
+        }
+
+        @media screen and (min-width:1920px) {
+            .container {
+                width: 1920px;
+            }
+        }
+
+    </style>
+
 </head>
 
 
-<body style="background-color: #EF64D8;">
+<body>
 
-    <div class="container-fluid fullHeight" style="position: absolute;">
 
-        <div class="row container-fluid navBar">
+    <div class="container">
 
-            <!--NavBar Begin-->
-
-            <div class="navbar navbar-static-top" style="min-width: 100%; width: 100%; left: 0; right: 0; margin: 0 auto;">
-
-                <div class="container-fluid" style="height: 100%; width: 100%;">
-                    <div class="navbar-collapse collapse" style="width: 100%; height: 100%;">
-
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 tab">
-                            <a href="mainPage.html">Home</a>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 tab">
-                            <a href="http://www.drawingsbywolfie.tumblr.com" target="_blank">Tumblr.com</a>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 tab">
-                            Contact
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+        <div style="display: block;">
+            <nav>
+                <ul>
+                    <li><a ahref="#home">Home</a></li>
+                    <li><a ahref="http://www.drawingsbywolfie.tumblr.com/">Portfolio</a></li>
+                    <li><a ahref="#aboutMe">About Me</a></li>
+                    <li><a ahref="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <!--NavBar End-->
+        <div class="content">
+            <a name="home"></a>
 
-        <div class="row" style="position: relative; height: 95%; width: auto;">
-
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-3 imgDiv"> <img src="/Images/crockett_Indiv.png" /></div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 headerText center-block" >
-                <p>
-                    Simply Irresistible.
-                </p>
-                <p style="font-size: 3vw;">
-                    The Complete Works.
-                </p>
-            </div>
+            <p style="font-family: Oswald, sans-serif; font-size: 5.0vw;">Simply Irresistible.</p>
             
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-3 imgDiv"><img src="/Images/tubbs_Indiv.png" /></div>
 
         </div>
 
-        <div class="row fullHeight" style="position: absolute; margin-top: 30px;">
 
-            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 headerText" style="margin-left: auto;">
+    </div>
 
-                <p style="font-size: 6vw;">
-                    Who I Am.
-                    <br />
-                </p>
-                    <ul style="font-size: 3vw;">
-                        <li>Artist</li>
-                        <li>Programmer</li>
-                        <li>Gamer</li>
-                        <li>Cynic.</li>
-                    </ul>
-                
-
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 imgDiv"><img src="/Images/gatorCop.png" class="center-block" style="height: 150%; width: auto;"/></div>
-
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 headerText">
-                    <p style="font-size: 5vw;">
-                        Achievements
-                        <br />
-                    </p>
-                    <ul style="font-size: 2vw;">
-                        <li>BETA Club Louisiana Watercolor Champion 2015-16</li>
-                        <li>Baton Rouge General Art Contest</li>
-                    </ul>
-                  </div>
-
-             </div>
-
-        </div>
 </body>
 </html>
