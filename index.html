@@ -5,6 +5,23 @@
 	<meta charset="utf-8" />
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <script src="slippry/slippry.min.js"></script>
+    <link rel="stylesheet" href="slippry/slippry.css" />
+    
+
+    <script>
+
+        $(document).ready(jQuery(document).ready(function () {
+            jQuery('#slippry-slider').slippry();
+        }));
+
+    </script>
+
+   
+
     <style type="text/css">
 
         @import url(https://fonts.googleapis.com/css?family=Oswald:700);
@@ -18,36 +35,36 @@
             top: 0;
             left: 0;
             background-image:url(/images/sketchyBGgrey_v2.png);
-            
             background-repeat: repeat-y;
         }
 
         .content {
             margin-top: 30px;
+            width: 100%;
             margin-left: 5%;
             display: block;
+            position: absolute;
         }
 
-        nav {
+        .nav {
             background-color: black;
-            height: 50px;
+            height: 2%;
             width: 100%;
             top: 0;
             left: 0;
             margin: 0;
-            padding: 0;
-            color: white;
+            padding: 0;            color: white;
             font-family: Oswald, sans-serif;
         }
 
-        nav ul {
+        .nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
         }
 
-        nav ul li {
+        .nav ul li {
             display: block;
             text-align: center;
             margin: 0 auto;
@@ -57,9 +74,10 @@
             text-decoration: none;
         }
 
-        nav ul li a:hover {
+        .nav ul li a:hover {
             background-color: #111111;
         }
+
 
         @media screen and (min-width:1920px) {
             .container {
@@ -74,26 +92,48 @@
 
 <body>
 
-
     <div class="container">
 
-        <div style="display: block;">
-            <nav>
-                <ul>
-                    <li><a ahref="#home">Home</a></li>
-                    <li><a ahref="http://www.drawingsbywolfie.tumblr.com/">Portfolio</a></li>
-                    <li><a ahref="#aboutMe">About Me</a></li>
-                    <li><a ahref="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="nav">
+            <ul>
+                <li><a ahref="#home">Home</a></li>
+                <li><a ahref="http://www.drawingsbywolfie.tumblr.com/">Portfolio</a></li>
+                <li><a ahref="#aboutMe">About Me</a></li>
+                <li><a ahref="#contact">Contact</a></li>
+            </ul>
         </div>
 
         <div class="content">
             <a name="home"></a>
 
             <p style="font-family: Oswald, sans-serif; font-size: 5.0vw;">Simply Irresistible.</p>
-            
+            <p style="font-family: Oswald, sans-serif; font-size: 3.0vw;">The Semi-complete works.</p>
 
+
+            <div style= "height: 100%; width: 50%; margin: 0 auto;">
+
+                <ul id="slippry-slider" style="height: 100%; text-align: center; ">
+                    <li>
+                        <a href="#slide1"><img src="Images/Artwork/crockettTubbsVespa2.png" alt="Character concept 1"></a>
+                    </li>
+                    <li>
+                        <a href="#slide2"><img src="Images/Artwork/crockettTubbs_characterSheetGreyBG.png" alt="Character concept 2"></a>
+                    </li>
+                    <li>
+                        <a href="#slide3"><img src="Images/Artwork/dieterCrown2.png" alt="Primary color palette"></a>
+                    </li>
+                    <li>
+                        <a href="#slide4"><img src="Images/Artwork/InTheBand.png" alt="Bandmates in the Miami Vice series."></a>
+                    </li>
+                    <li>
+                        <a href="#slide5"><img src="Images/Artwork/miamiViceFinished2.png" alt="Miami Vice-style concept art"></a>
+                    </li>
+                    <li>
+                        <a href="#slide6"><img src="Images/Artwork/press_tshirt-color.png" alt="T-shirt design for school newspaper staff."></a>
+                    </li>
+                </ul>
+
+            </div>
         </div>
 
 
