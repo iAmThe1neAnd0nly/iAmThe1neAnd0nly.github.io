@@ -4,135 +4,20 @@
     <title>Wild World</title>
 	<meta charset="utf-8" />
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
 
     <script src="slippry/slippry.js"></script>
     <link rel="stylesheet" href="slippry/slippry.css" />
     
+    <link rel="stylesheet" href="stylesheet.css" />
 
     <script>
-
         $(document).ready(jQuery(document).ready(function () {
             jQuery('#slippry-slider').slippry();
         }));
-
-    </script>
-
-   
-
-    <style type="text/css">
-
-        @import url(https://fonts.googleapis.com/css?family=Oswald:700);
-
-        .container {
-            height: 600%;
-            width: 100%;
-            position: absolute;
-            overflow: hidden;
-            margin: 0;
-            top: 0;
-            left: 0;
-            background-image:url(/images/sketchyBGgrey_v2.png);
-            background-repeat: repeat-y;
-        }
-
-        .content {
-            margin-top: 30px;
-            width: 100%;
-            margin-left: 5%;
-            display: block;
-            position: absolute;
-        }
-
-        .nav {
-            background-color: black;
-            width: 100%;
-            top: 0;
-            left: 0;
-            margin: 0;
-            padding: 0;
-            position: fixed;
-            z-index: 24;
-        }
-
-        .nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: auto;
-        }
-
-        .nav ul li {
-            display: block;
-            text-align: center;
-            margin: 0 auto;
-            font-size: 1.0vw;
-            padding: 16px;
-            float: left;
-            position: relative;
-            text-decoration: none;
-        }
-
-        .nav ul li:hover {
-            background-color: grey;
-        }
-
-        .nav a {
-            font-family: Oswald, sans-serif;
-            color: white;
-            text-decoration: none;
-        }
-
-        .portfolio-select {
-            display: inline-block;
-            margin: 0 auto;
-            height: 50%;
-        }
-
-        .portfolio-select a div {
-            background-color: black;
-            margin: 0 auto;
-            line-height: 25vw;
-            height: 25vw; width: 25vw;
-            margin-left: 1.3vw; 
-            padding: 2vw; 
-            display: inline-block;
-            position: relative;
-        }
-
-        .portfolio-select a {
-            text-align: center;
-            font-size: 3vw;
-            font-family: Oswald, sans-serif;
-            color: white;
-            text-decoration: none;
-        }
-
-        .portfolio-select a div:hover {
-            background-color: #262626;
-        }
-
-        footer {
-            margin-bottom: 0px;
-            bottom: 0;
-            position: absolute;
-            background-color: black;
-            height: 10%;
-            width: 100%;
-        }
-        
-         @media screen and (min-width:1920px) {
-            .container {
-                width: 1920px;
-            }
-        }
-
-    </style>
+     </script>
 
 </head>
-
 
 <body>
 
@@ -151,50 +36,27 @@
 
         <div class="content">
             
-            
-            <p style="font-family: Oswald, sans-serif; font-size: 5.0vw;">Simply Irresistible.</p>
-            <p style="font-family: Oswald, sans-serif; font-size: 3.0vw;">The (Semi)Complete Works.</p>
+            <p style="font-family: Oswald, sans-serif; font-size: 5.0vw; margin-bottom: 0;">Simply Irresistible.</p>
+            <p style="font-family: Oswald, sans-serif; font-size: 3.0vw; margin-top: 0;">The (Semi)Complete Works.</p>
 
             <a name="portfolios"></a>
 
             <div class="portfolio-select">
-                <a href="http://www.drawingsbywolfie.tumblr.com/" target="_blank"><div>Tumblr</div></a>
+                <a href="artPortfolio.html"><div>Art</div></a>
                 <a href="#webDev"><div>Web Dev</div></a>
                 <a href="#softwareDev"><div>Software/Game Dev</div></a>
             </div>
 
-            <!-- Image Slider -->
-            <div style= "height: 100%; width: 50%; margin: 0 auto; margin-top: 30px; ">
-
-                <ul id="slippry-slider" style="height: 100%; text-align: center;">
-                    <li>
-                        <a href="#slide1"><img src="images/Artwork/crockettTubbsVespa2.png" alt="Character concept 1"></a>
-                    </li>
-                    <li>
-                        <a href="#slide2"><img src="images/Artwork/crockettTubbs_characterSheetGreyBG.png" alt="Character concept 2"></a>
-                    </li>
-                    <li>
-                        <a href="#slide3"><img src="images/Artwork/dieterCrown2.png" alt="Primary color palette"></a>
-                    </li>
-                    <li>
-                        <a href="#slide4"><img src="images/Artwork/InTheBand.png" alt="Bandmates in the Miami Vice series."></a>
-                    </li>
-                    <li>
-                        <a href="#slide5"><img src="images/Artwork/miamiViceFinished2.png" alt="Miami Vice-style concept art"></a>
-                    </li>
-                    <li>
-                        <a href="#slide6"><img src="images/Artwork/press_tshirt-color.png" alt="T-shirt design for school newspaper staff."></a>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- Image Slider End -->
-
         </div>
 
-        <footer></footer>
-
-
+        <footer>
+            <p style="font-family: Oswald, sans-serif; color: grey; font-size: 2vw; top: 15px; margin-left: 15px; display: inline-block;">(c) JaNiece Campbell 2016</p>
+            <div style="float: right; display: inline-block; font-family: Oswald, sans-serif; color: grey; font-size: 1.4vw; height: 100%; width: 60%;">
+                <p>Tumblr</p>
+                <p>DeviantArt</p>
+                <p>Email</p>
+            </div>
+        </footer>
     </div>
 
 </body>

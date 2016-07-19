@@ -1,0 +1,106 @@
+﻿ 
+@import url(https://fonts.googleapis.com/css?family=Oswald:700);
+
+html {overflow-y: scroll; overflow-x:hidden;}
+
+        .container {
+            height: 300%;
+            width: 100%;
+            position: absolute;
+            margin: 0;
+            top: 0;
+            left: 0;
+            background-image:url(/images/sketchyBGgrey_v2.png);
+            background-repeat: repeat-y;
+        }
+
+        .content {
+            margin-top: 30px;
+            width: 100%;
+            margin-left: 5%;
+            display: block;
+            position: absolute;
+        }
+
+        .nav {
+            background-color: black;
+            width: 100%;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            z-index: 24;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+        }
+
+        .nav ul li {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 1.0vw;
+            padding: 16px;
+            float: left;
+            position: relative;
+            text-decoration: none;
+        }
+
+        .nav ul li:hover {
+            background-color: grey;
+        }
+
+        .nav a {
+            font-family: Oswald, sans-serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        .portfolio-select {
+            display: inline-block;
+            margin: 0 auto;
+            height: 50%;
+        }
+
+        .portfolio-select a div {
+            background-color: black;
+            margin: 0 auto;
+            line-height: 25vw;
+            height: 25vw; width: 25vw;
+            margin-left: 1.3vw; 
+            padding: 2vw; 
+            display: inline-block;
+            position: relative;
+        }
+
+        .portfolio-select a {
+            text-align: center;
+            font-size: 3vw;
+            font-family: Oswald, sans-serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        .portfolio-select a div:hover {
+            background-color: #262626;
+        }
+
+        footer {
+            margin-bottom: 0px;
+            bottom: 0;
+            position: absolute;
+            background-color: black;
+            height: 20vw;
+            width: 100%;
+        }
+
+         @media screen and (min-width:1920px) {
+            .container {
+                width: 1920px;
+            }
+        }
