@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
-    <script src="slippry/slippry.min.js"></script>
+    <script src="slippry/slippry.js"></script>
     <link rel="stylesheet" href="slippry/slippry.css" />
     
 
@@ -27,10 +27,10 @@
         @import url(https://fonts.googleapis.com/css?family=Oswald:700);
 
         .container {
-            height: 300%;
+            height: 600%;
             width: 100%;
             position: absolute;
-            overflow-x: hidden;
+            overflow: hidden;
             margin: 0;
             top: 0;
             left: 0;
@@ -48,20 +48,20 @@
 
         .nav {
             background-color: black;
-            height: 2%;
             width: 100%;
             top: 0;
             left: 0;
             margin: 0;
-            padding: 0;            color: white;
-            font-family: Oswald, sans-serif;
+            padding: 0;
+            position: fixed;
+            z-index: 24;
         }
 
         .nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            overflow: auto;
         }
 
         .nav ul li {
@@ -71,15 +71,60 @@
             font-size: 1.0vw;
             padding: 16px;
             float: left;
+            position: relative;
             text-decoration: none;
         }
 
-        .nav ul li a:hover {
-            background-color: #111111;
+        .nav ul li:hover {
+            background-color: grey;
         }
 
+        .nav a {
+            font-family: Oswald, sans-serif;
+            color: white;
+            text-decoration: none;
+        }
 
-        @media screen and (min-width:1920px) {
+        .portfolio-select {
+            display: inline-block;
+            margin: 0 auto;
+            height: 50%;
+            padding: 15px;
+        }
+
+        .portfolio-select a div {
+            background-color: black;
+            margin: 0 auto;
+            line-height: 25vw;
+            height: 25vw; width: 25vw;
+            margin-left: 20px; 
+            padding: 25px; 
+            display: inline-block;
+            position: relative;
+        }
+
+        .portfolio-select a {
+            text-align: center;
+            font-size: 3vw;
+            font-family: Oswald, sans-serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        .portfolio-select a div:hover {
+            background-color: #262626;
+        }
+
+        footer {
+            margin-bottom: 0px;
+            bottom: 0;
+            position: absolute;
+            background-color: black;
+            height: 10%;
+            width: 100%;
+        }
+        
+         @media screen and (min-width:1920px) {
             .container {
                 width: 1920px;
             }
@@ -96,23 +141,33 @@
 
         <div class="nav">
             <ul>
-                <li><a ahref="#home">Home</a></li>
-                <li><a ahref="http://www.drawingsbywolfie.tumblr.com/">Portfolio</a></li>
-                <li><a ahref="#aboutMe">About Me</a></li>
-                <li><a ahref="#contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolios">Portfolios</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
 
+        <a name="home"></a>
+
         <div class="content">
-            <a name="home"></a>
-
+            
+            
             <p style="font-family: Oswald, sans-serif; font-size: 5.0vw;">Simply Irresistible.</p>
-            <p style="font-family: Oswald, sans-serif; font-size: 3.0vw;">The Semi-complete works.</p>
+            <p style="font-family: Oswald, sans-serif; font-size: 3.0vw;">The (Semi)Complete Works.</p>
 
+            <a name="portfolios"></a>
 
-            <div style= "height: 100%; width: 50%; margin: 0 auto;">
+            <div class="portfolio-select">
+                <a href="http://www.drawingsbywolfie.tumblr.com/" target="_blank"><div>Tumblr</div></a>
+                <a href="#webDev"><div>Web Dev</div></a>
+                <a href="#softwareDev"><div>Software/Game Dev</div></a>
+            </div>
 
-                <ul id="slippry-slider" style="height: 100%; text-align: center; ">
+            <!-- Image Slider -->
+            <div style= "height: 100%; width: 50%; margin: 0 auto; margin-top: 30px; ">
+
+                <ul id="slippry-slider" style="height: 100%; text-align: center;">
                     <li>
                         <a href="#slide1"><img src="images/Artwork/crockettTubbsVespa2.png" alt="Character concept 1"></a>
                     </li>
@@ -134,7 +189,11 @@
                 </ul>
 
             </div>
+            <!-- Image Slider End -->
+
         </div>
+
+        <footer></footer>
 
 
     </div>
