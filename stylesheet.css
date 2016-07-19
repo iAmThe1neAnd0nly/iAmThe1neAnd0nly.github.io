@@ -4,7 +4,7 @@
 html {overflow-y: scroll; overflow-x:hidden;}
 
         .container {
-            height: 300%;
+            height: 500%;
             width: 100%;
             position: absolute;
             overflow-x: hidden;
@@ -16,7 +16,6 @@ html {overflow-y: scroll; overflow-x:hidden;}
         }
 
         .content {
-            margin-top: 30px;
             width: 100%;
             margin-left: 5%;
             display: block;
