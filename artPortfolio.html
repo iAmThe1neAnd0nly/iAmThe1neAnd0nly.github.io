@@ -17,46 +17,7 @@
             jQuery('#slippry-slider').slippry();
         }));
     </script>
-    <style>
-        .img-thumb {
-            width: 12vw;
-            height: 12vw;
-            background: white;
-            overflow: hidden;
-            transform-origin: top left;
-            transition: all .5s ease-in-out;
-            margin: 12px;
-            text-align: center;
-            align-self: flex-start;
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .row {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: auto;
-        }
-
-        .img-thumb img {
-            width: 100%;
-            height: auto;
-            display: inline-block;
-        }
-
-        @media screen and (max-width: 768px) {
-            .img-thumb {
-                width: 80vw;
-                height: 80vw;
-            }
-        }
-    </style>
-
-
-
+    
 </head>
 
 <body>
@@ -78,29 +39,33 @@
             <!-- Image Slider -->
             <div style="height: 100%; width: 60%; margin: 0 auto; margin-top: 50px; ">
 
-                <div class="row">
-                    <div class="img-thumb">
-                        <img src="Images/Artwork/animalFarmLarge.png" />
-                    </div>
-                    <div class="img-thumb">
-                        <img src="Images/Artwork/antiSanta.png" />
-                    </div>
-                    <div class="img-thumb">
-                        <img src="Images/Artwork/communism.png" />
-                    </div>
-                </div>
+                <ul id="slippry-slider" style="height: 100%; text-align: center;">
+                    <li>
+                        <a href="#slide1"><img src="images/Artwork/animalFarmLarge.png" alt="Character concept 1"></a>
+                    </li>
+                    <li>
+                        <a href="#slide2"><img src="images/Artwork/crockettTubbs_characterSheetGreyBG.png" alt="Character concept 2"></a>
+                    </li>
+                    <li>
+                        <a href="#slide3"><img src="images/Artwork/undergroundCoverPig.png" alt="Primary color palette"></a>
+                    </li>
+                    <li>
+                        <a href="#slide4"><img src="images/Artwork/InTheBand.png" alt="Bandmates in the Miami Vice series."></a>
+                    </li>
+                    <li>
+                        <a href="#slide5"><img src="images/Artwork/miamiViceFinished2.png" alt="Miami Vice-style concept art"></a>
+                    </li>
+                    <li>
+                        <a href="#slide6"><img src="images/Artwork/communism.png" alt="T-shirt design for school newspaper staff."></a>
+                    </li>
+                    <li>
+                        <a href="#slide7"><img src="images/Artwork/alligatorCop.png" alt="Alligator Cop"></a>
+                    </li>
 
-                <div class="row">
-                    <div class="img-thumb">
-                        <img src="Images/Artwork/pistolsEdit.jpg" />
-                    </div>
-                    <div class="img-thumb">
-                        <img src="Images/Artwork/vultureEdit.jpg" />
-                    </div>
-                    <div class="img-thumb">
-                        <img src="Images/Artwork/undergroundCoverPig.png" />
-                    </div>
-                </div>
+                    <li>
+                        <a href="#slide8"><img src="images/Artwork/devilCover.png" alt="Chapter Cover for In-The-Works Graphic Novel"></a>
+                    </li>
+                </ul>
 
             </div>
             <!-- Image Slider End -->
@@ -119,34 +84,7 @@
         </footer>
 
     </div>
-    <script>
-        var origHW = $('.img-thumb').height();
-        $('.img-thumb').hover(function () {
-                $(this).children('img').css({
 
-                })
-                $($(this).get(0)).css({
-                    //'transform': 'scale(2.5, 2.5)',
-
-                    'width': $(this).children('img').width() * 2.5,
-                    'height': $(this).children('img').height() * 2.5,
-                    'z-index': '10'
-                })
-            },
-
-            function () {
-                $(this).children('img').css({
-
-                })
-                $($(this).get(0)).css({
-                    //'transform': 'scale(1, 1)',
-                    'height': origHW,
-                    'width': origHW,
-                    'z-index': 'initial'
-                })
-
-            });
-    </script>
 </body>
 
 </html>
